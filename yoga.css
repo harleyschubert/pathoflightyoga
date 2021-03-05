@@ -1,0 +1,93 @@
+universal * {box-sizing: border-box; }
+body {background-color: #40407A; color: #40407A; margin: 0; font-family: Verdana, Arial, sans-serif}
+
+#wrapper {box-shadow: #40407A; background-color: white; padding: 2em}
+
+header {background-color: #40407A; color: #FFFFFF;font-size: 90%; min-height: 200px;}
+header {background-image: url("sunrise.jpg"); background-size: 100% 100%; margin-top: 50px;}
+
+.home {height: 20vh; padding-top: 2em; padding-left: 10%;}
+
+.content {height: 20vh; padding-top: 2em; padding-left: 10%;}
+
+nav {text-align: right; background-color: white; margin: 0; padding-top: 0.5em; padding-bottom: 1em; padding-right: 0;
+    height: auto;}
+nav  a {text-decoration: none}
+
+#mathero {height: 300px; background-image: url("yogamat.jpg"); background-size: 100% 100%; background-repeat: no-repeat; display: none;}
+
+#loungehero {height: 300px; background-image: url("yogalounge.jpg"); background-size: 100% 100%; background-repeat: no-repeat; display: none;}
+
+h2 {margin: 0}
+
+footer {font-size: small; font-style: italic; text-align: center;}
+li dd {font-size: 90%}
+
+nav {position: fixed;
+    top: 0; left: 0; z-index: 9999; width: 100%; height: 50px; }
+nav ul {marker: none; margin: 0; padding-right: 2em; font-size: 1.2em; }
+nav li {display: inline; padding-left: 2em; width: 30%; }
+nav :link {color: #3f2860;}
+nav :visited {color: #497777;}
+nav :hover {color: #a26100; }
+
+header {text-decoration-line: none;}
+header :link {color: white;}
+header :visited {color: white;}
+header :hover {color: #8f92b2; transition: color 10s ease-out;}
+
+table {
+    border: 1px #40407A; margin-bottom: 1em; min-width: 400px; border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.5em; border: 1px #40407A;
+}
+
+tr:nth-of-type(even) {
+    background-color: #d7e8e9;
+}
+caption {
+    margin: 1em; font-weight: bold; font-size: 120%;
+}
+
+footer {clear: right;}
+
+section {padding-left: .5em; padding-right: .5em;}
+
+#flow {display: block}
+
+form {
+    display: flex; flex-flow: column nowrap;
+}
+
+input datalist textarea {
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 600px;) {
+    nav ul {
+        display: flex;  flex-flow: row nowrap; justify-content: flex-end;}
+    nav li {width: 7em;}
+    section {padding-right: 2em; padding-left: 2em;}
+    #mathero {display: block; padding-bottom: 1em;}
+    #loungehero {display: block; padding-bottom: 1em;}
+    #flow {flex-direction: row;}
+    form {display: grid;
+        grid-template-rows: auto;
+        max-width: 40em; grid-gap: 1em;
+        grid-column: 1; width: 9em;}
+    input[type="submit"] {grid-column: 2; width: 1fr:}
+}
+
+audio {
+    margin-bottom: 1em;
+}
+
+@media (min-width: 1024px;){
+    header {font-size: 120%;}
+    nav {font-weight: bold;}
+    .home {height: 50vh; padding-top: 5em; padding-left: 8em;}
+    .content {height: 30vh; padding-top: 2em; padding-left: 8em;}
+    #wrapper {margin: auto; width: 80%; }
+}
